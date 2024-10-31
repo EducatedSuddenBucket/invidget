@@ -2,6 +2,7 @@
   "name": "invidget",
   "version": "1.0.0",
   "description": "SVG invite widgets that look just like the ones on the Discord client!",
+  "type": "module",
   "main": "src/index.js",
   "dependencies": {
     "@sentry/node": "^6.13.2",
@@ -27,7 +28,7 @@
     "start": "node src/index.js",
     "test": "jest",
     "lint": "standard",
-    "dev": "nodemon --exec node -r dotenv/config src"
+    "dev": "nodemon --exec node --loader dotenv/config src/index.js"
   },
   "repository": {
     "type": "git",
